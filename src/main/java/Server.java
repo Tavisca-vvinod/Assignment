@@ -46,7 +46,7 @@ public class Server {
                 {
                     System.out.println("FILENOTFOUND");
                     metaData = "HTTP/1.1 404 NOT FOUND"+metaData;
-                    resourceToSend = RESOURCE_PATH + "\\" + "404Error.html";
+                    resourceToSend = RESOURCE_PATH + "\\" + "Error404.html";
                     resourceReader = new BufferedInputStream(new FileInputStream(resourceToSend));
                 }
                 metaData +=resourceReader.available()+"\n\n";
