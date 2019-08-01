@@ -21,9 +21,9 @@ public class ClientHandler
                 BufferedInputStream resourceReader = null;
                 try
                 {
-                    System.out.println("FILEFOUND");
                     resourceReader = new BufferedInputStream(new FileInputStream(resourceToSend));
                     metaData = "HTTP/1.1 200 OK" + metaData;
+                    System.out.println("FILEFOUND");
                 }
                 catch (FileNotFoundException f)
                 {
